@@ -18,9 +18,14 @@ bun dev
 ```bash
 npx shadcn-ui@latest init
 npx shadcn-ui@latest add button
+
+# Dropdown menu
 npx shadcn-ui@latest add dropdown-menu
 
+# Theme 
+npm install next-themes
 
+npm install @radix-ui/react-icons
 ```
 # Shadcn-ui
 ```js
@@ -31,6 +36,20 @@ import {Button} from "@/components/ui/button"
 
 ```
 
+# Shadcn-ui Theme
+```js
+// In app folder create this folder and file : components/theme-provider.tsx
+"use client"
+
+import * as React from "react"
+import {ThemeProvider as NextThemesProvider} from "next-theme"
+import {type ThemeProviderProps} from "next-themes/dist/types"
+
+export function ThemeProvider({children, ...props}): ThemeProviderProps){
+    return <NextThemeProvider {...props}>{children}</NextThemesProvider>
+}
+
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
