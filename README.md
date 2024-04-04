@@ -57,6 +57,19 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+# Kinde
+
+For auth in .env.local
+
+```js
+KINDE_CLIENT_ID= 4a81a4e803f947879f3c1d8ded92ea57
+KINDE_CLIENT_SECRET = xxxxxx
+KINDE_ISSUER_URL = https://racinesaas.kinde.com
+KINDE_SITE_URL = http://localhost:3000
+KINDE_POST_LOGOUT_REDIRECT_URL = http://localhost:3000
+KINDE_POST_LOGIN_REDIRECT_URL = http://localhost:3000/dashboard
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
