@@ -9,7 +9,7 @@ import UserNav from "./UserNav";
 const Navbar = async () => {
     const { isAuthenticated, getUser } = getKindeServerSession()
     const user = await getUser()
-    console.log(user?.picture);
+    // console.log(user?.picture);
 
     return (
         <nav className="border-b bg-background h-[10vh] flex items-center">
